@@ -16,6 +16,18 @@
             <input type="password" name="password" id="password" class="credentials" required><br>
             <label for="password2">Potvrdit heslo</label><br>
             <input type="password" id="password2" class="credentials" required><br>
+            <label for="tel.num">tel. číslo</label><br>
+            <input type="tel" minlength="9" id="tel.num" name="tel.num" class="credentials" required><br>
+            <label for="card-number">číslo karty</label><br>
+            <input type="text" minlength="13" id="card-number" name="card-number" class="credentials" required><br>
+            <label for="card-owner-name">Jméno a příjmení držitele karty</label><br>
+            <input type="text" id="card-owner-name" name="card-owner-name" class="credentials" required><br>
+            <label for="card-exp">Datum expirace karty</label><br>
+            <input type="date" id="card-exp" name="card-exp" class="credentials" required><br>
+            <label for="card-cvv">Kod cvv karty</label><br>
+            <input type="tel" maxlength="4" id="card-cvv" name="card-cvv" class="credentials" placeholder="123" required><br>
+            <label for="address">adresa trvalého bydliště</label><br>
+            <input type="text" id="address" class="credentials" required><br>
             <div id="box">
                 <input type="submit" value="Registrovat" id="submit">
             </div>

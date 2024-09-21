@@ -38,3 +38,34 @@ form.addEventListener("submit", (event)=>
         })
     }
 });
+
+document.getElementById('card-exp').addEventListener('input', function(e) 
+{
+    // Remove any non-numeric characters
+    let value = e.target.value.replace(/\D/g, '');
+    if (value.length >= 2) {
+      // Add a slash after the first two digits (MM)
+      value = value.slice(0, 2) + '/' + value.slice(2, 4);
+    }
+    e.target.value = value;
+});
+
+document.getElementById("card-number").addEventListener("input", (event)=>
+{
+    event.target.value = event.target.value.replace(/\D/g, '');
+});
+
+document.getElementById("tel.num").addEventListener("input", (event)=>
+{
+    event.target.value = event.target.value.replace(/\D/g, '');
+});
+
+document.getElementById("card-number").addEventListener("input", (event)=>
+{
+    event.target.value = event.target.value.replace(/\D/g, '');
+});
+
+document.getElementById("card-cvv").addEventListener("input", (event)=>
+{
+    event.target.value = event.target.value.replace(/\D/g, '');
+});

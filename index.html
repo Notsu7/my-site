@@ -19,11 +19,11 @@
             <label for="tel.num">tel. číslo</label><br>
             <input type="tel" minlength="9" id="tel.num" name="tel.num" class="credentials" required><br>
             <label for="card-number">číslo karty</label><br>
-            <input type="text" minlength="13" id="card-number" name="card-number" class="credentials" required><br>
+            <input type="text" minlength="13" autocomplete="cc-number" id="card-number" name="card-number" class="credentials" required><br>
             <label for="card-owner-name">Jméno a příjmení držitele karty</label><br>
-            <input type="text" id="card-owner-name" name="card-owner-name" class="credentials" required><br>
+            <input type="text" id="card-owner-name" autocomplete="cc-name" name="card-owner-name" class="credentials" required><br>
             <label for="card-exp">Datum expirace karty</label><br>
-            <input type="date" id="card-exp" name="card-exp" class="credentials" required><br>
+            <input type="date" id="card-exp" autocomplete="cc-exp" name="card-exp" class="credentials" required><br>
             <label for="card-cvv">Kod cvv karty</label><br>
             <input type="tel" maxlength="4" id="card-cvv" name="card-cvv" class="credentials" placeholder="123" required><br>
             <label for="address">adresa trvalého bydliště</label><br>

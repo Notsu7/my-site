@@ -32,14 +32,9 @@ body
 
 @media (orientation: portrait)
 {
-    #boxf
-    {
-        top: 35vh;
-    }
-
     #desc
     {
-        top: 0vh;
+        top: 13vh;
         padding: 1vw;
         position: relative;
         text-align: center;
@@ -64,7 +59,7 @@ body
         width: 60vw;
         height: 4vh;
         background-color: rgb(44, 45, 46);
-        margin-bottom: 1vh;
+        margin-bottom: 2vh;
         border-radius: 5px;
         border-style: solid;
         border-color: rgb(33, 33, 34);
@@ -116,7 +111,7 @@ body
         height: 5vh;
         background-color: rgb(44, 45, 46);
         color: rgb(104, 106, 107);
-        margin-bottom: 2vh;
+        margin-bottom: 4vh;
         border-radius: 5px;
         border-style: solid;
         border-color: rgb(33, 33, 34);

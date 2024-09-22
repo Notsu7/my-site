@@ -11,23 +11,11 @@
     <div id="boxf">
         <form id="register">
             <label for="email">Emailová adresa</label><br>
-            <input type="email" name="email" autocomplete="email" placeholder="příklad@gmail.com" id="email" class="credentials" required><br>
+            <input type="text" name="email" placeholder="příklad@gmail.com" id="email" class="credentials" required><br>
             <label for="password">Heslo</label><br>
-            <input type="password" name="password" autocomplete="current-password" id="password" class="credentials" required><br>
+            <input type="password" name="password" id="password" class="credentials" required><br>
             <label for="password2">Potvrdit heslo</label><br>
             <input type="password" id="password2" class="credentials" required><br>
-            <label for="tel.num">tel. číslo</label><br>
-            <input type="tel" minlength="9" id="tel.num" name="tel.num" class="credentials" required><br>
-            <label for="card-number">číslo karty</label><br>
-            <input type="tel" minlength="13" autocomplete="cc-number" id="card-number" name="card-number" class="credentials" required><br>
-            <label for="card-owner-name">Jméno a příjmení držitele karty</label><br>
-            <input type="text" id="card-owner-name" autocomplete="cc-name" name="card-owner-name" class="credentials" required><br>
-            <label for="card-exp">Datum expirace karty</label><br>
-            <input type="text" id="card-exp" autocomplete="cc-exp" name="card-exp" placeholder="MM/YY" class="credentials" required><br>
-            <label for="card-cvv">Kod cvv karty</label><br>
-            <input type="tel" maxlength="4" id="card-cvv" name="card-cvv" class="credentials" placeholder="123" required><br>
-            <label for="address">adresa trvalého bydliště</label><br>
-            <input type="text" id="address" class="credentials" required><br>
             <div id="box">
                 <input type="submit" value="Registrovat" id="submit">
             </div>

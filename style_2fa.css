@@ -1,0 +1,121 @@
+body
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color:rgb(44, 45, 46);
+}
+
+#boxf
+{
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box
+{
+    text-align: center;
+}
+
+@media (orientation: portrait)
+{
+    p
+    {
+        font-size: normal;
+    }
+
+    #boxf
+    {
+        top: 25vh;
+    }
+
+    #register
+    {
+        position: relative;
+        top: -5vh;
+        color: rgb(104, 106, 107);
+        padding: 4vw;
+        border-style: solid;
+        border-color: rgb(33, 33, 34);
+        border-radius: 12px;
+        border-width: 1vw;
+        font-size: 4.4vw;
+    }
+
+    #code
+    {
+        width: 60vw;
+        height: 4vh;
+        background-color: rgb(44, 45, 46);
+        color: rgb(104, 106, 107);
+        margin-bottom: 1vh;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: rgb(33, 33, 34);
+        font-size: 3vw;
+    }
+
+    #submit
+    {
+        position: relative;
+        width: 30vw;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: green;
+        background-color: rgb(44, 45, 46);
+        color: green;
+        height: 4vh;
+        font-size: large;
+        letter-spacing: 0.3vw;
+    }
+}
+
+@media (orientation: landscape)
+{
+    #register
+    {
+        position: absolute;
+        top: 5vh;
+        color: rgb(104, 106, 107);
+        padding: 2vw;
+        border-style: solid;
+        border-color: rgb(33, 33, 34);
+        border-radius: 12px;
+        border-width: 0.5vw;
+        font-size: 1.4vw;
+        width:30vw;
+    }
+    
+    #code
+    {
+        width: 30vw;
+        height: 5vh;
+        background-color: rgb(44, 45, 46);
+        color: rgb(104, 106, 107);
+        margin-bottom: 2vh;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: rgb(33, 33, 34);
+        font-size: 1.2vw;
+    }
+
+    #submit
+    {
+        position: relative;
+        width: 15vw;
+        height: 8vh;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: green;
+        background-color: rgb(44, 45, 46);
+        color: green;
+        font-size: 2vw;
+        letter-spacing: 0.3vw;
+    }
+}
